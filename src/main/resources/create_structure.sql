@@ -1,4 +1,4 @@
-create role adminEjemplo with password '1234';
-create database equipos owner adminEjemplo;
-ALTER ROLE userdb LOGIN;
+create role laura with password '123456';
+create database arquitectura owner laura;
+ALTER ROLE laura LOGIN;
 

@@ -2,6 +2,7 @@ package co.ucentral.bkedgame.controladores;
 
 import co.ucentral.bkedgame.persistencia.entidades.Equipo;
 import co.ucentral.bkedgame.servicios.EquipoServicio;
+import dto.EquipoDto;
 import lombok.AllArgsConstructor;
 import org.springframework.web.bind.annotation.*;
 
@@ -28,7 +29,7 @@ public class EquipoControlador {
     }
 
     @PostMapping("/")
-    public Equipo crear(@RequestBody Equipo equipo){
+    public EquipoDto crear(@RequestBody EquipoDto equipo){
         return equipoServicio.crear(equipo);
     }
 

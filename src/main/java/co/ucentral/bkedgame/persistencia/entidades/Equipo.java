@@ -22,5 +22,6 @@ public class Equipo {
     private String nombre;
 
     private String nombreCorto;
-    //private LocalDateTime fechaCreacion;
+    private LocalDateTime fechaCreacion;
+    private LocalDateTime fechaRegistro;
 }
